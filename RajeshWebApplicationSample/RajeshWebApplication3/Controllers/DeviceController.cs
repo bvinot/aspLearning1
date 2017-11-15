@@ -36,6 +36,24 @@ namespace RajeshWebApplication3.Controllers
         {
             return View(d);
         }
+        public ActionResult Edit(DeviceData d)
+        {
+            return View(d);
+        }
+        
+        public ActionResult Delete(DeviceData d)
+        {
+            return View(d);
+        }
+        [HttpPost, ActionName ("Delete")]
+        public ActionResult DeleteConfirmed(DeviceData d)
+        {
+            DeviceHelper.DeviceList.Remove(d);
+            ConvertToXml(DeviceHelper.DeviceList);
+
+
+            return RedirectToAction("Index");
+        }
 
         private void ConvertToXml(List<DeviceData> deviceList)
         {
