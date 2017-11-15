@@ -14,17 +14,12 @@ namespace RajeshWebApplication3.Controllers
         // GET: Device
         public ActionResult Index()
         {
-
-
             return View(DeviceHelper.DeviceList);
-
-
         }
         public ActionResult CreateNew()
         {
-            var qqq = new DeviceData();
-            qqq.Model = "SAMPLE MODEL";
-            return View(qqq);
+            var newDevice = new DeviceData();
+            return View(newDevice);
         }
 
         [HttpPost]
