@@ -15,6 +15,7 @@ namespace RajeshWebApplication3.Controllers
         public ActionResult Index()
         {
 
+
             return View(DeviceHelper.DeviceList);
 
 
