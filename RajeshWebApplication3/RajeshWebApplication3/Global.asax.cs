@@ -27,7 +27,7 @@ namespace RajeshWebApplication3
 
                 PopulateData(item.Element("Type").Value, item);
 
-               
+                var abc = 123;
             }
 
         }
