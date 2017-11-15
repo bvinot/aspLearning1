@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Devices>
+  <Device>
+    <Type>Desktop</Type>
+    <Name>Lenovo</Name>
+    <Model>XCL</Model>
+    <SerialNum>1234</SerialNum>
+  </Device>
+  <Device>
+    <Type>Desktop</Type>
+    <Name>Acer</Name>
+    <Model>XCG</Model>
+    <SerialNum>1674</SerialNum>
+  </Device>
+  <Device>
+    <Type>Laptop</Type>
+    <Name>Dell</Name>
+    <Model>XCS</Model>
+    <SerialNum>894</SerialNum>
+  </Device>
+  <Device>
+    <Type>Laptop</Type>
+    <Name>Apple</Name>
+    <Model>KLCS</Model>
+    <SerialNum>6784</SerialNum>
+  </Device>
+  <Device>
+    <Type>Mobile</Type>
+    <Name>Apple</Name>
+    <Model>SE</Model>
+    <SerialNum>09874</SerialNum>
+  </Device>
+  <Device>
+    <Type>Mobile</Type>
+    <Name>Blackberry</Name>
+    <Model>DTEK</Model>
+    <SerialNum>60</SerialNum>
+  </Device>
+  <Device>
+    <Type>Mobile</Type>
+    <Name>IPhone</Name>
+    <Model>IPhone 8</Model>
+    <SerialNum>A1209N</SerialNum>
+  </Device>
+</Devices>
