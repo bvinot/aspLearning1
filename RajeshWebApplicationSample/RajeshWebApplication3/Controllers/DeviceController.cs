@@ -40,7 +40,7 @@ namespace RajeshWebApplication3.Controllers
         private void ConvertToXml(List<DeviceData> deviceList)
         {
             XDocument d = new XDocument();
-          List<XElement> elements =  new List<XElement>();
+            List<XElement> elements = new List<XElement>();
             foreach (var item in deviceList)
             {
                 XElement x = new XElement("Device",

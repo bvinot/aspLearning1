@@ -42,4 +42,10 @@
     <Model>IPhone 8</Model>
     <SerialNum>A1209N</SerialNum>
   </Device>
+  <Device>
+    <Type>Mobile</Type>
+    <Name>BlackBerry</Name>
+    <Model>B10023E</Model>
+    <SerialNum>A1002N</SerialNum>
+  </Device>
 </Devices>
