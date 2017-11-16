@@ -1,14 +1,8 @@
-﻿@model IEnumerable<RajeshWebApplication3.Models.DeviceData>
-
+﻿﻿@model IEnumerable<RajeshWebApplication3.Models.DeviceData>
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Home Page";
 }
 
-<h2>Index</h2>
-
-<p>
-    @Html.ActionLink("Create New", "CreateNew")
-</p>
 <table class="table">
     <tr>
         <th>
@@ -23,28 +17,34 @@
         <th>
             @Html.DisplayNameFor(model => model.Type)
         </th>
+        <th>Actions</th>
     </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Model)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.SerialNum)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Type)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { Name = item.Name, Model = item.Model, SerialNum = item.SerialNum, Type = item.Type }) |
-            @Html.ActionLink("Details", "Details", new { Name=item.Name,Model=item.Model,SerialNum=item.SerialNum,Type=item.Type }) |
-            @Html.ActionLink("Delete", "Delete", new { Name = item.Name })
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Model)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SerialNum)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Type)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { Name = item.Name, Model = item.Model, SerialNum = item.SerialNum, Type = item.Type }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+    }
 
 </table>
+<button class="btn btn-primary" type="button" id="addressSearch"
+        onclick="location.href='@Url.Action("CreateNew", "Device")'">
+    New Device
+</button>
+

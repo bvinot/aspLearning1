@@ -10,8 +10,7 @@ namespace RajeshWebApplication3.Controllers
 {
     public class DeviceController : Controller
     {
-        private object search;
-
+      
         // GET: Device
         public ActionResult Index()
         {
