@@ -48,4 +48,10 @@
     <Model>KILL</Model>
     <SerialNum>12ACG</SerialNum>
   </Device>
+  <Device>
+    <Type>Mobile</Type>
+    <Name>Gionne</Name>
+    <Model>Xone</Model>
+    <SerialNum>ASD12</SerialNum>
+  </Device>
 </Devices>

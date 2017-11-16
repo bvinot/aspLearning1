@@ -41,7 +41,8 @@ namespace RajeshWebApplication3.Controllers
         {
             return View(d);
         }
-        
+        [HttpPost]
+       
         public ActionResult Delete(DeviceData d)
         {
             return View(d);
