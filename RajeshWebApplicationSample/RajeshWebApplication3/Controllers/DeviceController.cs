@@ -40,7 +40,17 @@ namespace RajeshWebApplication3.Controllers
         {
             return View(d);
         }
-        [HttpPost]
+        [HttpPost, ActionName ("Edit")]
+        public ActionResult EditName(DeviceData d)
+        {
+            var d1 = DeviceHelper.DeviceList.First(s => s.Name == d.Name);
+            d1.SerialNum = d.SerialNum;
+            d1.Model = d.Model;
+            ConvertToXml(DeviceHelper.DeviceList);
+
+
+            return RedirectToAction("Index");
+        }
        
         public ActionResult Delete(DeviceData d)
         {

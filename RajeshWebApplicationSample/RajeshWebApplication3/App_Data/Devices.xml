@@ -1,16 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Devices>
   <Device>
-    <Type>Desktop</Type>
-    <Name>Acer</Name>
-    <Model>XCG</Model>
-    <SerialNum>1674</SerialNum>
-  </Device>
-  <Device>
     <Type>Laptop</Type>
     <Name>Dell</Name>
-    <Model>XCS</Model>
-    <SerialNum>894</SerialNum>
+    <Model>XCLLLLLL</Model>
+    <SerialNum>894444</SerialNum>
   </Device>
   <Device>
     <Type>Laptop</Type>
@@ -23,12 +17,6 @@
     <Name>Apple</Name>
     <Model>SE</Model>
     <SerialNum>09874</SerialNum>
-  </Device>
-  <Device>
-    <Type>Mobile</Type>
-    <Name>Blackberry</Name>
-    <Model>DTEK</Model>
-    <SerialNum>60</SerialNum>
   </Device>
   <Device>
     <Type>Mobile</Type>
@@ -47,11 +35,5 @@
     <Name>Oppo</Name>
     <Model>KILL</Model>
     <SerialNum>12ACG</SerialNum>
-  </Device>
-  <Device>
-    <Type>Mobile</Type>
-    <Name>Gionne</Name>
-    <Model>Xone</Model>
-    <SerialNum>ASD12</SerialNum>
   </Device>
 </Devices>
