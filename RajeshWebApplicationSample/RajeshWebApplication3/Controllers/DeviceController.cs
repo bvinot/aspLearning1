@@ -10,6 +10,7 @@ namespace RajeshWebApplication3.Controllers
 {
     public class DeviceController : Controller
     {
+        private object search;
 
         // GET: Device
         public ActionResult Index()
@@ -48,7 +49,9 @@ namespace RajeshWebApplication3.Controllers
         [HttpPost, ActionName ("Delete")]
         public ActionResult DeleteConfirmed(DeviceData d)
         {
-            DeviceHelper.DeviceList.Remove(d);
+            DeviceData d1 = DeviceHelper.DeviceList.First(s => s.Name == d.Name);
+            DeviceHelper.DeviceList.Remove(d1);
+            
             ConvertToXml(DeviceHelper.DeviceList);
 
 

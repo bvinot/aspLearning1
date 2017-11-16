@@ -12,7 +12,10 @@ namespace RajeshWebApplication3.Models
         public string SerialNum { get; set; }
         public string Type { get; set; }
 
-
+        internal static string First(Func<object, bool> p)
+        {
+            throw new NotImplementedException();
+        }
     }
     public class Desktop : DeviceData
     {

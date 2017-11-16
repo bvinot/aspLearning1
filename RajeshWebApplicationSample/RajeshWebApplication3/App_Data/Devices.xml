@@ -2,12 +2,6 @@
 <Devices>
   <Device>
     <Type>Desktop</Type>
-    <Name>Lenovo</Name>
-    <Model>XCL</Model>
-    <SerialNum>1234</SerialNum>
-  </Device>
-  <Device>
-    <Type>Desktop</Type>
     <Name>Acer</Name>
     <Model>XCG</Model>
     <SerialNum>1674</SerialNum>
@@ -47,5 +41,11 @@
     <Name>BlackBerry</Name>
     <Model>B10023E</Model>
     <SerialNum>A1002N</SerialNum>
+  </Device>
+  <Device>
+    <Type>Mobile</Type>
+    <Name>Oppo</Name>
+    <Model>KILL</Model>
+    <SerialNum>12ACG</SerialNum>
   </Device>
 </Devices>
